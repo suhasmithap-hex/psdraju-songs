@@ -1,3 +1,7 @@
+/* ===========================
+   Global Styles
+=========================== */
+
 *{
     margin:0;
     padding:0;
@@ -5,182 +9,355 @@
 }
 
 body{
-
     font-family:'Open Sans',sans-serif;
     background:#f8f8f5;
     color:#333;
-
+    line-height:1.6;
 }
 
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+/* ===========================
+   Header
+=========================== */
+
 header{
-
-    background:white;
+    background:#fff;
     box-shadow:0 2px 8px rgba(0,0,0,.08);
-
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
 nav{
-
     max-width:1200px;
     margin:auto;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
-
     padding:20px;
-
 }
 
 .logo{
-
     font-family:'Merriweather',serif;
     font-size:28px;
     font-weight:bold;
-
 }
 
 nav ul{
-
     display:flex;
     list-style:none;
     gap:30px;
-
 }
 
 nav a{
-
     text-decoration:none;
     color:#333;
-
+    font-weight:600;
 }
 
-.hero{
+nav a:hover{
+    color:#2E7D32;
+}
 
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
     max-width:1200px;
     margin:auto;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     gap:60px;
-
     padding:70px 20px;
-
 }
 
 .hero-image img{
-
     width:380px;
     border-radius:20px;
-
-    box-shadow:0 10px 35px rgba(0,0,0,.12);
-
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
 .hero-content{
-
     max-width:550px;
-
 }
 
 .hero-content h1{
-
     font-family:'Merriweather',serif;
     font-size:52px;
+    margin-bottom:15px;
+    line-height:1.2;
+}
+
+.hero-content span{
+    color:#2E7D32;
+}
+
+.tagline{
+    color:#666;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:.95rem;
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.button{
+    display:inline-block;
+    margin-top:35px;
+    background:#2E7D32;
+    color:white;
+    padding:16px 34px;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#256728;
+}
+
+/* ===========================
+   Welcome Section
+=========================== */
+
+.welcome{
+    background:white;
+    padding:80px 0;
+}
+
+.welcome h2{
+    text-align:center;
+    font-family:'Merriweather',serif;
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+.welcome p{
+    max-width:850px;
+    margin:20px auto;
+    text-align:center;
+    font-size:20px;
+    color:#555;
+    line-height:1.8;
+}
+
+.welcome-verse{
+    max-width:700px;
+    margin:50px auto 0;
+    padding:25px;
+    background:#f7fbf7;
+    border-left:5px solid #2E7D32;
+    border-radius:12px;
+    text-align:center;
+    font-style:italic;
+    font-size:22px;
+    color:#444;
+}
+
+.welcome-verse span{
+    display:block;
+    margin-top:15px;
+    font-size:16px;
+    font-style:normal;
+    font-weight:bold;
+    color:#2E7D32;
+}
+
+/* ===========================
+   Featured Songs
+=========================== */
+/* Featured Songs */
+
+.featured{
+    background:#f8f8f5;
+    padding:80px 0;
+}
+
+.featured h2{
+    text-align:center;
+    font-family:'Merriweather',serif;
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+.song-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.song-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.song-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.song-image{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.song-content{
+
+    padding:25px;
+
+}
+
+.song-content h3{
+
+    font-family:'Merriweather',serif;
 
     margin-bottom:15px;
 
 }
 
-.hero-content span{
-
-    color:#2E7D32;
-
-}
-
-.hero-content h2{
+.song-content p{
 
     color:#666;
-    font-weight:400;
+
+    line-height:1.7;
 
     margin-bottom:25px;
 
 }
 
-.hero-content p{
-
-    font-size:20px;
-    line-height:1.8;
-
-}
-
-.button{
+.song-button{
 
     display:inline-block;
 
-    margin-top:35px;
-
     background:#2E7D32;
+
     color:white;
 
-    padding:16px 34px;
+    padding:12px 22px;
 
-    border-radius:40px;
+    border-radius:30px;
 
     text-decoration:none;
 
+    transition:.3s;
+
 }
 
-.button:hover{
+.song-button:hover{
 
     background:#256728;
 
 }
 
+.video-placeholder{
+    aspect-ratio:16/9;
+    background:#e5e5e5;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#777;
+    font-size:24px;
+    margin-bottom:25px;
+}
+
+.song-card h3{
+    font-family:'Merriweather',serif;
+    margin-bottom:15px;
+}
+
+.song-card p{
+    color:#666;
+    margin-bottom:20px;
+    line-height:1.7;
+}
+
+.song-card a{
+    color:#2E7D32;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.song-card a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#1f1f1f;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
 @media(max-width:900px){
 
-.hero{
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
 
-    flex-direction:column;
+    nav ul{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 
-    text-align:center;
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
 
-}
+    .hero-image img{
+        width:280px;
+    }
 
-.hero-image img{
+    .hero-content h1{
+        font-size:38px;
+    }
 
-    width:280px;
-
-}
-
-.hero-content h1{
-
-    font-size:38px;
-
-}
-
-nav{
-
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-nav ul{
-
-    gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
-
-}
-.tagline{
-    color:#666;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    font-size:0.95rem;
-}
+    .welcome h2,
+    .featured h2{
+        font-size:32px;
+    }
 
 }
