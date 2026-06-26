@@ -317,16 +317,6 @@ box-shadow:0 4px 10px rgba(46,125,50,.25);
     line-height:1.7;
 }
 
-.song-card a{
-    color:#2E7D32;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.song-card a:hover{
-    text-decoration:underline;
-}
-
 /* ===========================
    Footer
 =========================== */
