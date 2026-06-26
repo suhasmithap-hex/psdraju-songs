@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Open Sans',sans-serif;
+    background:#f8f8f5;
+    color:#333;
+
+}
+
+header{
+
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+nav{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    font-family:'Merriweather',serif;
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:30px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:#333;
+
+}
+
+.hero{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:60px;
+
+    padding:70px 20px;
+
+}
+
+.hero-image img{
+
+    width:380px;
+    border-radius:20px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.12);
+
+}
+
+.hero-content{
+
+    max-width:550px;
+
+}
+
+.hero-content h1{
+
+    font-family:'Merriweather',serif;
+    font-size:52px;
+
+    margin-bottom:15px;
+
+}
+
+.hero-content span{
+
+    color:#2E7D32;
+
+}
+
+.hero-content h2{
+
+    color:#666;
+    font-weight:400;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    font-size:20px;
+    line-height:1.8;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#2E7D32;
+    color:white;
+
+    padding:16px 34px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+}
+
+.button:hover{
+
+    background:#256728;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:280px;
+
+}
+
+.hero-content h1{
+
+    font-size:38px;
+
+}
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+.tagline{
+    color:#666;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:0.95rem;
+}
+
+}
