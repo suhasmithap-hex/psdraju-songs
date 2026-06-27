@@ -366,17 +366,11 @@ footer p{
     .featured h2{
         font-size:32px;
     }
-.about-page{
-    background:yellow !important;
 }
 
-.about-page h1{
-    color:red !important;
-}
 
-.about-photo{
-    border:8px solid blue !important;
-}
+
+
 /* ===========================
    About Page
 =========================== */
