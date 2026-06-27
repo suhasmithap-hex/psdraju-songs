@@ -505,3 +505,204 @@ footer p{
     font-style:italic;
 
 }
+/* ===========================
+   Songs Page
+=========================== */
+
+.songs-page{
+
+    background:#f8f8f5;
+
+    padding:50px 0 80px;
+
+}
+
+.songs-page h1{
+
+    text-align:center;
+
+    font-family:'Merriweather',serif;
+
+    font-size:44px;
+
+    margin-bottom:20px;
+
+}
+
+.songs-intro{
+
+    max-width:850px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+.song-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:35px;
+
+}
+
+.song-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.song-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.song-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:contain;
+
+    background:#faf8f3;
+
+    padding:10px;
+
+}
+
+.song-content{
+
+    padding:25px;
+
+}
+
+.song-content h3{
+
+    font-family:'Merriweather',serif;
+
+    margin-bottom:15px;
+
+}
+
+.song-content p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+.song-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:20px;
+
+}
+
+.song-button{
+
+    display:inline-block;
+
+    background:#2E7D32;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.song-button:hover{
+
+    background:#256728;
+
+}
+
+.lyrics-button{
+
+    background:white;
+
+    border:2px solid #2E7D32;
+
+    color:#2E7D32;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.lyrics-button:hover{
+
+    background:#2E7D32;
+
+    color:white;
+
+}
+
+.lyrics{
+
+    display:none;
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+    border-top:1px solid #ddd;
+
+}
+
+.lyrics h4{
+
+    color:#2E7D32;
+
+    margin:20px 0 10px;
+
+    font-family:'Merriweather',serif;
+
+}
+
+.lyrics p{
+
+    white-space:pre-line;
+
+    line-height:1.9;
+
+}
